@@ -20,7 +20,19 @@ div.logo {
     color: #bcc3c7;
 }
 
-ul.nav-links {
+div.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu img{
+    width: 20px;
+    margin-left: 0.8vw;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
     display: flex;
     margin: 0;
     padding: 0;
@@ -42,6 +54,7 @@ ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
+    
 }
 
 div.hero-section {
@@ -344,4 +357,133 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 760px){
+    div.nav-bar {
+        padding: 1rem 2rem;
+    }
+    div.logo {
+        font-size: 1.3rem;
+    }
+
+    div.menu{
+        flex-direction: column;
+    }
+
+    .menu img{
+        display: block;
+    }
+    
+    .nav-links {
+       /* flex-direction: column; */
+       padding-top: 2px;
+       display: none;
+    }
+
+   /* .show{
+       display: block;
+       flex-direction: column;
+       padding-top: 2px;
+   } */
+    ul li {
+        margin: 1.5vh 0;
+        font-size: 1rem;
+    }
+
+    /* Hero Section */
+
+    div.hero-section {
+        padding: 5rem;
+    }
+
+    div.hero-content-heading h3{
+        font-size: 1.5rem;
+    }
+
+    div.hero-content-heading p{
+        font-size: 0.8rem;
+    }
+
+    div.hero-content-btn a{
+        font-size: 0.7rem;
+    }
+
+    /* Sub-hero section */
+
+    div.hero-background{
+        padding: 8rem 2rem;
+    }
+    div.background{
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+
+    div.background h4 {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+    div.background p {
+        padding: 1rem;
+        font-size: 0.7rem;
+    }
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.snapshot-team {
+        padding:2rem ;
+    }
+    div.snapshot-team h2 {
+        font-size: 1.2rem;
+    }
+
+    div.snapshot-team p{
+        font-size: 0.8rem
+    }
+
+    div.snapshot-box-content {
+        flex-direction: column;
+    }
+
+    /* gallery section */
+
+    div.gallery-content h4{
+      font-size: 1rem;  
+    }
+
+    div.gallery-content p{
+        font-size: 0.8rem;
+    }
+    
+    /* footer section */
+
+    div.footer{
+        padding: 2rem;
+    }
+
+    div.footer-content h4{
+        font-size: 1.2rem;
+    }
+
+    div.footer-content p {
+       font-size: 0.9rem; 
+    }
+
+    div.footer-input{
+        flex-direction: column;
+    }
+
+    input[type="email"],
+    input[type="text"]{
+        width: 51%;
+        margin: 0 0 10px;
+    }
+
+    div.footer-btn a {
+        font-size: 0.7rem;
+        padding: 10px 20px;
+    }
 }
